@@ -27,6 +27,10 @@ def _assert_is_attrs(cls: Any) -> None:
 
 
 def register_serializer(tp: Any, serializer: ITypeSerializer) -> None:
+    """
+    Register a new serializer for instances of `tp`, that will be used by
+    `seralize()` and `deserialize()`.
+    """
     component.provideUtility(
         serializer, ITypeSerializer, f"serializer-{tp.__name__}"
     )
