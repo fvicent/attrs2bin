@@ -29,7 +29,7 @@ assert my_sprite == deserialized
 
 # What can be serialized?
 
-Objects of any `attrs`-based class can be serialized, as long as all their fields have a type (using type annotations or `attr.ib(type=...)`). `attrs2bin` ships with serializer for the following types:
+Objects of any `attrs`-based class can be serialized, as long as all their fields have a type (using type annotations or `attr.ib(type=...)`). `attrs2bin` ships with serializers for the following types:
 
 * `int`
 * `float`
@@ -45,7 +45,7 @@ Instead of `deserialize(bytes, cls)`, you can use `deserialize_from_socket(sck, 
 
 # Rust compatibility
 
-The serializers that ships with `attrs2bin` are all compatible with Rust's [`bincode`](https://github.com/servo/bincode) library. Keep under your pillow the following table in order to create compatible types between Python and Rust:
+The serializers that ship with `attrs2bin` are all compatible with Rust's [`bincode`](https://github.com/servo/bincode) library. Keep under your pillow the following table in order to create compatible types between Python and Rust:
 
 | Python type                   | Rust type     |
 | ---------------------------   |:-------------:|
