@@ -3,13 +3,13 @@
 
 # Installation
 
-`attrs2bin` is [hosted on PyPI](https://pypi.org/project/attrs2bin/), to install it just run:
+`attrs2bin` is [hosted on PyPI](https://pypi.org/project/attrs2bin/):
 
 `python -m pip install attrs2bin`
 
 # Example
 
-`attrs2bin` provides just two simple funcions: `serialize()`, which takes an object and returns a byte stream, and `deserialize()`, that takes a byte stream and an `attrs`-based class and returns an object.
+`attrs2bin` provides just two simple functions: `serialize()`, which takes an object and returns a byte stream, and `deserialize()`, that takes a byte stream and an `attrs`-based class and returns an object.
 
 ```python
 import attr
